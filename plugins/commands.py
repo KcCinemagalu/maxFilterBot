@@ -33,7 +33,7 @@ async def start(client, message):
             [
                 InlineKeyboardButton('🙆🏻 Hᴇʟᴘ 🦾', url=f"https://t.me/{temp.U_NAME}?start=help"),
             ],[
-            InlineKeyboardButton('⪦ 𝕄𝕆𝕍𝕀𝔼 ℂℍ𝔸ℕℕ𝔼𝕃 ⪧', url='https://t.me/Kr_Imax')
+            InlineKeyboardButton('⪦ 𝕄𝕆𝕍𝕀𝔼 ℂℍ𝔸ℕℕ𝔼𝕃 ⪧', url='https://t.me/KR_Filmy_Links')
             ],
             [
                 InlineKeyboardButton(text=DOWNLOAD_TEXT_NAME,url=DOWNLOAD_TEXT_URL)
@@ -52,10 +52,10 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('⚡️ Kr Imax Movies ⚡️', url=f'http://t.me/Kr_Imax')
+            InlineKeyboardButton('⚡️ KR Cinema ⚡️', url=f'http://t.me/KR_Filmy_Links')
             ],[
                     InlineKeyboardButton(
-                         "👑 𝗢𝘄𝗻𝗲𝗿 👑", url=f'https://t.me/Kingkr18'
+                         "👑 𝗢𝘄𝗻𝗲𝗿 👑", url=f'https://t.me/KingofKRFilmy'
                     )
                 ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -80,7 +80,7 @@ async def start(client, message):
             ],
              [
                 InlineKeyboardButton(
-                    "👑 OWNER 👑", url='https://t.me/Kingkr18'
+                    "👑 OWNER 👑", url='https://t.me/KingofKRFilmy'
                 )
             ]
         ]
@@ -100,9 +100,9 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('⚡️ Kr Imax Movies ⚡️', url=f'http://t.me/Kr_Imax')
+            InlineKeyboardButton('⚡️ Kr Cinema ⚡️', url=f'http://t.me/KR_Filmy_Links')
         ],[
-                InlineKeyboardButton( "👑 𝗢𝘄𝗻𝗲𝗿 👑", url=f'https://t.me/Kingkr18')
+                InlineKeyboardButton( "👑 𝗢𝘄𝗻𝗲𝗿 👑", url=f'https://t.me/KingofKRFilmy')
             ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -227,7 +227,7 @@ async def start(client, message):
                             InlineKeyboardButton('📁 ᴅᴏᴡɴʟᴏᴀᴅ 📁', url=ghost_url)
                         ],
                         [
-                            InlineKeyboardButton("👑 𝗢𝘄𝗻𝗲𝗿 👑", url=f'https://t.me/Kingkr18')
+                            InlineKeyboardButton("👑 𝗢𝘄𝗻𝗲𝗿 👑", url=f'https://t.me/KingofKRFilmy')
                         ]
                     ]
                 )
@@ -252,7 +252,7 @@ async def start(client, message):
                 [[
                     InlineKeyboardButton('📁 ᴅᴏᴡɴʟᴏᴀᴅ 📁', url=ghost)
                 ],[
-                    InlineKeyboardButton("👑 𝗢𝘄𝗻𝗲𝗿 👑", url=f'https://t.me/Kingkr18')
+                    InlineKeyboardButton("👑 𝗢𝘄𝗻𝗲𝗿 👑", url=f'https://t.me/KingofKRFilmy')
                 ]]
             )
         )
@@ -313,7 +313,7 @@ async def start(client, message):
                         [
                             InlineKeyboardButton('📁 ᴅᴏᴡɴʟᴏᴀᴅ 📁', url=generatedurl)
                         ],[
-                            InlineKeyboardButton("👑 𝗢𝘄𝗻𝗲𝗿 👑", url=f'https://t.me/Kingkr18')                            
+                            InlineKeyboardButton("👑 𝗢𝘄𝗻𝗲𝗿 👑", url=f'https://t.me/KingofKRFilmy')                            
                         ]
                     ]
                 )
@@ -326,7 +326,7 @@ async def start(client, message):
         pre, file_id = ((base64.urlsafe_b64decode(data + "=" * (-len(data) % 4))).decode("ascii")).split("_", 1)
         try:
             # Create the inline keyboard button with callback_data
-            button = InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=f'https://t.me/Kr_Imax')
+            button = InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=f'https://t.me/KR_Filmy_Links')
                             
             # Create the inline keyboard markup with the button
             keyboard = InlineKeyboardMarkup([[button]])
@@ -370,7 +370,7 @@ async def start(client, message):
     if f_caption is None:
         f_caption = f"{files.file_name}"
 
-    button = InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=f'https://t.me/Kr_Imax')
+    button = InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=f'https://t.me/KR_Filmy_Links')
                             
     # Create the inline keyboard markup with the button
     keyboard = InlineKeyboardMarkup([[button]])
