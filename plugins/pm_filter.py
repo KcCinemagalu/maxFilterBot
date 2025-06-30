@@ -407,7 +407,7 @@ async def next_page(bot, query):
         ])
     # btn.insert(0,
     #     [ 
-	#     InlineKeyboardButton(text="⚡ ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ⚡", url='https://telegram.me/Kr_Imax'),
+	#     InlineKeyboardButton(text="⚡ ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ⚡", url='https://telegram.me/KR_Filmy_Links'),
     #     ] 
     # )
     if 0 < offset <= 10:
@@ -727,7 +727,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
         ])
         # btn.insert(0,
         #     [ 
-        #     InlineKeyboardButton(text="⚡ ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ⚡", url='https://telegram.me/Kr_Imax'),
+        #     InlineKeyboardButton(text="⚡ ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ⚡", url='https://telegram.me/KR_Filmy_Links'),
         #     ] 
         # )
 
@@ -1040,7 +1040,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
         ])
     #     btn.insert(0,
     #     [ 
-	#     InlineKeyboardButton(text="⚡ ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ⚡", url='https://telegram.me/Kr_Imax'),
+	#     InlineKeyboardButton(text="⚡ ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ⚡", url='https://telegram.me/KR_Filmy_Links'),
     #     ] 
     # )
 
@@ -1325,7 +1325,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         ])
         # btn.insert(0,
         # [ 
-	    # InlineKeyboardButton(text="⚡ ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ⚡", url='https://telegram.me/Kr_Imax'),
+	    # InlineKeyboardButton(text="⚡ ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ⚡", url='https://telegram.me/KR_Filmy_Links'),
         # ])
 
         if offset != "":
@@ -1598,7 +1598,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 return
             else:
                 # Create the inline keyboard button with callback_data
-                button = InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=f'https://t.me/Kr_Imax')
+                button = InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=f'https://t.me/KR_Filmy_Links')
                             
                 # Create the inline keyboard markup with the button
                 keyboard = InlineKeyboardMarkup([[button]])
@@ -1661,10 +1661,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('⚡️ Kr Imax Movies ⚡️', url=f'http://t.me/Kr_Imax')
+            InlineKeyboardButton('⚡️ Kr Cinema ⚡️', url=f'http://t.me/KR_Filmy_Links')
         ],[
                 InlineKeyboardButton(
-                    "👑 𝗢𝘄𝗻𝗲𝗿 👑", url=f'https://t.me/Kingkr18'
+                    "👑 𝗢𝘄𝗻𝗲𝗿 👑", url=f'https://t.me/KingofKRFilmy'
                 )
             ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1796,7 +1796,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('♥️ Aʙᴏᴜᴛ', callback_data='about')
             ],[
             InlineKeyboardButton('Open settings', callback_data='openSettings'),
-            InlineKeyboardButton('💤Developer', url='https://telegram.me/LazyDeveloper')
+            InlineKeyboardButton('💤Developer', url='https://telegram.me/KingofKRFilmy')
             ],[
             InlineKeyboardButton('🔐 Close', callback_data='close_data')
             ]]
@@ -1900,7 +1900,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             btn = [[
                 InlineKeyboardButton(text=f"🔍 Sᴇᴀʀᴄʜ 🇭​​​​​🇪​​​​​🇷​​​​​🇪​​​​​ 🔎", url=f"https://telegram.me/{MOVIE_GROUP_USERNAME}")
             ],[
-                InlineKeyboardButton(text=f"🐞 ══• ʀᴇᴘᴏʀᴛ ɪꜱꜱᴜᴇ •══ 🐞", url=f"https://telegram.me/Kingkr18")
+                InlineKeyboardButton(text=f"🐞 ══• ʀᴇᴘᴏʀᴛ ɪꜱꜱᴜᴇ •══ 🐞", url=f"https://telegram.me/KingofKRFilmy")
             ]]
             btn_lzdv = [
                 [
@@ -1925,7 +1925,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             btn = [[
                 InlineKeyboardButton(text=f"🔍 Sᴇᴀʀᴄʜ 🇭​​​​​🇪​​​​​🇷​​​​​🇪​​​​​ 🔎", url=f"https://telegram.me/{MOVIE_GROUP_USERNAME}")
             ],[
-                InlineKeyboardButton(text=f"🐞 ══• ʀᴇᴘᴏʀᴛ ɪꜱꜱᴜᴇ •══ 🐞", url=f"https://telegram.me/Kingkr18")
+                InlineKeyboardButton(text=f"🐞 ══• ʀᴇᴘᴏʀᴛ ɪꜱꜱᴜᴇ •══ 🐞", url=f"https://telegram.me/KingofKRFilmy")
             ]]
             btn_lzdv = [
                 [
@@ -1950,7 +1950,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             btn = [[
                 InlineKeyboardButton(text=f"🔍 Sᴇᴀʀᴄʜ 🇭​​​​​🇪​​​​​🇷​​​​​🇪​​​​​ 🔎", url=f"https://telegram.me/{MOVIE_GROUP_USERNAME}")
             ],[
-                InlineKeyboardButton(text=f"🐞 ══• ʀᴇᴘᴏʀᴛ ɪꜱꜱᴜᴇ •══ 🐞", url=f"https://telegram.me/Kingkr18")
+                InlineKeyboardButton(text=f"🐞 ══• ʀᴇᴘᴏʀᴛ ɪꜱꜱᴜᴇ •══ 🐞", url=f"https://telegram.me/KingofKRFilmy")
             ]]
             btn_lzdv = [
                 [
@@ -1975,7 +1975,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             btn = [[
                 InlineKeyboardButton(text=f"🔍 Sᴇᴀʀᴄʜ 🇭​​​​​🇪​​​​​🇷​​​​​🇪​​​​​ 🔎", url=f"https://telegram.me/{MOVIE_GROUP_USERNAME}")
             ],[
-                InlineKeyboardButton(text=f"🐞 ══• ʀᴇᴘᴏʀᴛ ɪꜱꜱᴜᴇ •══ 🐞", url=f"https://telegram.me/Kingkr18")
+                InlineKeyboardButton(text=f"🐞 ══• ʀᴇᴘᴏʀᴛ ɪꜱꜱᴜᴇ •══ 🐞", url=f"https://telegram.me/KingofKRFilmy")
             ]]
             btn_lzdv = [
                 [
@@ -2000,7 +2000,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             btn = [[
                 InlineKeyboardButton(text=f"🔍 Sᴇᴀʀᴄʜ 🇭​​​​​🇪​​​​​🇷​​​​​🇪​​​​​ 🔎", url=f"https://telegram.me/{MOVIE_GROUP_USERNAME}")
             ],[
-                InlineKeyboardButton(text=f"🐞 ══• ʀᴇᴘᴏʀᴛ ɪꜱꜱᴜᴇ •══ 🐞", url=f"https://telegram.me/Kingkr18")
+                InlineKeyboardButton(text=f"🐞 ══• ʀᴇᴘᴏʀᴛ ɪꜱꜱᴜᴇ •══ 🐞", url=f"https://telegram.me/KingofKRFilmy")
             ]]
             btn_lzdv = [
                 [
@@ -2025,7 +2025,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             btn = [[
                 InlineKeyboardButton(text=f"🔍 Sᴇᴀʀᴄʜ 🇭​​​​​🇪​​​​​🇷​​​​​🇪​​​​​ 🔎", url=f"https://telegram.me/{MOVIE_GROUP_USERNAME}")
             ],[
-                InlineKeyboardButton(text=f"🐞 ══• ʀᴇᴘᴏʀᴛ ɪꜱꜱᴜᴇ •══ 🐞", url=f"https://telegram.me/Kingkr18")
+                InlineKeyboardButton(text=f"🐞 ══• ʀᴇᴘᴏʀᴛ ɪꜱꜱᴜᴇ •══ 🐞", url=f"https://telegram.me/KingofKRFilmy")
             ]]
             btn_lzdv = [
                 [
@@ -2050,7 +2050,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             btn = [[
                 InlineKeyboardButton(text=f"💛 Request More 💛", url=f"https://telegram.me/{MOVIE_GROUP_USERNAME}")
             ],[
-                InlineKeyboardButton(text=f"🐞 ══• ʀᴇᴘᴏʀᴛ ɪꜱꜱᴜᴇ •══ 🐞", url=f"https://telegram.me/Kingkr18")
+                InlineKeyboardButton(text=f"🐞 ══• ʀᴇᴘᴏʀᴛ ɪꜱꜱᴜᴇ •══ 🐞", url=f"https://telegram.me/KingofKRFilmy")
             ]]
             btn_lzdv = [
                         [InlineKeyboardButton(text=f"♻ ̶R̶e̶q̶u̶e̶s̶t̶ ̶R̶e̶c̶i̶e̶v̶e̶d ♻", callback_data=f"notify_user_req_rcvd:{user_id}:{movie}")],
@@ -2626,7 +2626,7 @@ async def auto_filter(client, msg, spoll=False):
     ])
     # btn.insert(0,
     # [ 
-    # InlineKeyboardButton(text="⚡ ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ⚡", url='https://telegram.me/Kr_Imax'),
+    # InlineKeyboardButton(text="⚡ ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ⚡", url='https://telegram.me/KR_Filmy_Links'),
     # ])
 
     if offset != "":
@@ -2690,7 +2690,7 @@ async def auto_filter(client, msg, spoll=False):
         try:
             z = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
                                         reply_markup=InlineKeyboardMarkup(btn))
-            # thanksaa = await message.reply_text(f"♥ Heads up for **<a href='https://t.me/LazyDeveloperr'>𓆩• LazyDeveloper •𓆪</a>**...\n<code>🎉 we love you 🎊</code>")
+            # thanksaa = await message.reply_text(f"♥ Heads up for **<a href='https://t.me/KingofKRFilmy'>𓆩• LazyDeveloper •𓆪</a>**...\n<code>🎉 we love you 🎊</code>")
             # await asyncio.sleep(5)
             # await thanksaa.delete()
             # if SELF_DELETE:
@@ -2701,7 +2701,7 @@ async def auto_filter(client, msg, spoll=False):
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
 
             m = await message.reply_photo(photo=poster, caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
-            # thanks = await message.reply_text(f"♥ Heads up for **<a href='https://t.me/LazyDeveloperr'>𓆩• LazyDeveloper •𓆪</a>**...\n<code>🎉 we love you 🎊</code>")
+            # thanks = await message.reply_text(f"♥ Heads up for **<a href='https://t.me/KingofKRFilmy'>𓆩• LazyDeveloper •𓆪</a>**...\n<code>🎉 we love you 🎊</code>")
             # await asyncio.sleep(5)
             # await thanks.delete()
             # if SELF_DELETE:
@@ -2711,7 +2711,7 @@ async def auto_filter(client, msg, spoll=False):
         except Exception as e:
             logger.exception(e)
             n = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
-            # thanksz = await message.reply_text(f"♥ Heads up for **<a href='https://t.me/LazyDeveloperr'>𓆩• LazyDeveloper •𓆪</a>**...\n<code>🎉 we love you 🎊</code>")
+            # thanksz = await message.reply_text(f"♥ Heads up for **<a href='https://t.me/KingofKRFilmy'>𓆩• LazyDeveloper •𓆪</a>**...\n<code>🎉 we love you 🎊</code>")
             # await asyncio.sleep(5)
             # await thanksz.delete()
             # if SELF_DELETE:
@@ -2719,7 +2719,7 @@ async def auto_filter(client, msg, spoll=False):
             #     await n.delete()         
     else:
         p = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
-        # thanksx = await message.reply_text(f"♥ Heads up for **<a href='https://t.me/LazyDeveloperr'>𓆩• LazyDeveloper •𓆪</a>**...\n<code>🎉 we love you 🎊</code>")
+        # thanksx = await message.reply_text(f"♥ Heads up for **<a href='https://t.me/KingofKRFilmy'>𓆩• LazyDeveloper •𓆪</a>**...\n<code>🎉 we love you 🎊</code>")
         # await asyncio.sleep(5)
         # await thanksx.delete()
         # await asyncio.sleep(250)
